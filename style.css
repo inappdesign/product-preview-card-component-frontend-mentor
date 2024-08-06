@@ -1,0 +1,165 @@
+:root {
+	/* colors */
+	--dark-cyan: hsl(158, 36%, 37%);
+	--dark-aquamarine: hsl(157, 43%, 18%);
+	--cream: hsl(30, 38%, 92%);
+	--very-dark-blue: hsl(212, 21%, 14%);
+	--dark-grayish-blue: hsl(228, 12%, 48%);
+	--white: hsl(0, 0%, 100%);
+	/* fonts */
+	--montserrat: "Montserrat", sans-serif;
+	--fraunces: "Fraunces", serif;
+}
+
+/* CSS reset start*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+/* CSS reset end */
+
+body {
+	font-size: 1.4rem;
+	background-color: var(--cream);
+	font-family: var(--montserrat);
+	font-weight: 500;
+	color: var(--dark-grayish-blue);
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	background-color: var(--white);
+	max-width: 34.3rem;
+	overflow: hidden;
+	border-radius: 1rem;
+	min-height: 61.1rem;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+button {
+	background-color: var(--dark-cyan);
+	display: flex;
+	gap: 1.2rem;
+	width: 100%;
+	height: 4.8rem;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+	border: 0;
+	border-radius: 0.8rem;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+button:hover {
+	background-color: var(--dark-aquamarine);
+}
+
+button:focus {
+	outline: 0;
+}
+
+button:active {
+	transform: scale(0.98);
+}
+
+button p {
+	font-family: var(--montserrat);
+	font-weight: 700;
+	font-size: 1.4rem;
+	color: var(--white);
+}
+
+button img {
+	height: 1.6rem;
+	width: auto;
+}
+
+section {
+	padding: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 1.6rem;
+}
+
+section h1 {
+	letter-spacing: 0.5rem;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+section h2 {
+	font-family: var(--fraunces);
+	font-weight: 700;
+	font-size: 3.2rem;
+	line-height: 3.2rem;
+	color: var(--very-dark-blue);
+}
+
+section > p {
+	line-height: 2.3rem;
+}
+
+.desktop-image {
+	display: none;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+	height: 5rem;
+	gap: 1.9rem;
+}
+
+.price p:nth-child(odd) {
+	font-size: 3.2rem;
+	font-family: var(--fraunces);
+	font-weight: 700;
+	color: var(--dark-cyan);
+}
+
+.price p:nth-child(even) {
+	font-size: 1.3rem;
+	text-decoration: line-through;
+}
+
+.attribution {
+	min-width: 100%;
+	text-align: center;
+	font-size: 1rem;
+	position: absolute;
+	bottom: 0;
+}
+
+@media (min-width: 25rem) {
+	main {
+		max-width: 60rem;
+		min-height: 30rem;
+		display: flex;
+	}
+	section {
+		padding: 3rem;
+	}
+	.desktop-image {
+		display: block;
+		min-width: 30rem;
+	}
+	.mobile-image {
+		display: none;
+	}
+}
