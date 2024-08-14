@@ -46,6 +46,4 @@ I will continue to complete more challenges on Frontend Mentor.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@inappdesign](https://www.frontendmentor.io/profile/inappdesign)
