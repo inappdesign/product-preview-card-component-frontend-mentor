@@ -51,6 +51,10 @@ img {
 }
 
 button {
+	font-family: var(--montserrat);
+	font-weight: 700;
+	font-size: 1.4rem;
+	color: var(--white);
 	background-color: var(--dark-cyan);
 	display: flex;
 	gap: 1.2rem;
@@ -75,13 +79,6 @@ button:focus {
 
 button:active {
 	transform: scale(0.98);
-}
-
-button p {
-	font-family: var(--montserrat);
-	font-weight: 700;
-	font-size: 1.4rem;
-	color: var(--white);
 }
 
 button img {
